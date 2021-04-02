@@ -16,7 +16,7 @@ def check_if_it_is_me(ctx):
 @client.event
 async def on_ready():          
     
-    await client.change_presence(activity=discord.Activity(type=discord.ActivityType.streaming, name="Developing Cogs... ", url='https://twitch.tv/th__gamer'))
+    await client.change_presence(activity=discord.Activity(type=discord.ActivityType.streaming, name="Join now Team Ocean! ", url='https://twitch.tv/th__gamer'))
     
     print('Ready')
 
@@ -55,4 +55,4 @@ for filename in os.listdir('./cogs'):
     if filename.endswith('.py'):
         client.load_extension(f'cogs.{filename[:-3]}')
 
-client.run('NzExNTE1Nzk0NzA5Njc2MDYy.XsEIuA.L1-2JMz4T6aEh8g9jACrxt6D-M0')
+client.run('NzExNTY4ODM0NTkwNDA4NzY1.XsE6Hg.0UMjWqRmv_afqQNKLO-DkXy7U9U')

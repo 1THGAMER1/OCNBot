@@ -56,7 +56,7 @@ class welcomer(commands.Cog):
         embed.set_image(url="attachment://welcomeimage.png")
         embed.timestamp = datetime.datetime.utcnow()
 
-        welcome_channel = self.client.get_channel(id=799578428172140554)
+        welcome_channel = self.client.get_channel(id=787039810133032991)
 
 
         if welcome_channel != None:
@@ -105,7 +105,7 @@ class welcomer(commands.Cog):
         embed2.set_image(url="attachment://leaveimage.png")
         embed2.timestamp = datetime.datetime.utcnow()
 
-        welcome_channel = self.client.get_channel(id=799578428172140554)
+        welcome_channel = self.client.get_channel(id=787039810133032991)
 
 
         if welcome_channel != None:

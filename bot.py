@@ -5,7 +5,7 @@ import asyncio
 
 
 intents = discord.Intents(messages = True, guilds = True, members = True)
-client = commands.Bot(command_prefix = 'o!', intents = intents)
+client = commands.Bot(command_prefix = 'ocn!', intents = intents)
 
 def check_if_it_is_me(ctx):
     return ctx.message.author.id == 400658261512159232

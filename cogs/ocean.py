@@ -62,7 +62,7 @@ class TeamOcean(commands.Cog):
     async def anforderungen(self, ctx):
         bewerbung = discord.Embed(
         title='',
-        description='__Um unserem Clan beizutreten musst du folgende Grundvoraussetzungen erfüllen:__ \n ▫ Bereit sein **den Epic- Namen** zu ändern. \n ▫ Bereit sein den Servernickname zu ändern (zum Beispiel Ocean THGAMER).  \n ▫ Höfliches und nicht toxisches Verhalten. \n \n **__Anforderungen__** \n <@&782577432272175104> \n ▫ 1000 Pr \n ▫3 Seasons Champ \n ▫3 mal Top 300 in Cups \n ▫1 mal Top 150 in Cups \n \n<@&763399186149802045> \n ▫ 3 Seasons Arena Champ \n ▫ 5 Mal Top 800 in Cups \n ▫ 350 PR Points \n \n <@&730918775657857056> \n ▫ 3 Seasons Arena Champ \n ▫ 3 Mal Top 1500 in Cups \n ▫ 150 PR Points  \n \n <@&730764354835841044> \n ▫ 1 Season Champ \n ▫ 3 mal Top 3500 in Cups \n ▫ 80 PR Points \n \n <@&730917730848342077> \n ▫ 4500 Arena Punkte \n ▫ 3 Mal Top 5000 in Cups \n ▫ 50 PR Points \n \n <@&730762306581168159> \n ▫ Das ist unser Grinder Team! Jeder darf beitreten!',
+        description='__Um unserem Clan beizutreten musst du folgende Grundvoraussetzungen erfüllen:__ \n ▫ Bereit sein **den Epic- Namen** zu ändern. \n ▫ Bereit sein den Servernickname zu ändern (zum Beispiel Ocean THGAMER).  \n ▫ Höfliches und nicht toxisches Verhalten. \n \n **__Anforderungen__** \n <@&782577432272175104> \n ▫ 3 Seasons Arena Champ \n ▫ 3 mal Top 300 in Cups \n ▫ 1 mal Top 150 in Cups \n ▫ 1000 Pr Points \n \n<@&763399186149802045> \n ▫ 3 Seasons Arena Champ \n ▫ 5 Mal Top 800 in Cups \n ▫ 350 PR Points \n \n <@&730918775657857056> \n ▫ 3 Seasons Arena Champ \n ▫ 3 Mal Top 1300 in Cups \n ▫ 150 PR Points  \n \n <@&730764354835841044> \n ▫ 1 Season Arena Champ \n ▫ 3 mal Top 2500 in Cups \n ▫ 80 PR Points \n \n <@&730917730848342077> \n ▫ 5000 Arena Punkte \n ▫ 3 Mal Top 4000 in Cups \n ▫ 50 PR Points \n \n <@&730762306581168159> \n ▫ Das ist unser Grinder Team! Jeder darf beitreten!',
         colour = discord.Colour.blue()
     )
 
@@ -77,7 +77,7 @@ class TeamOcean(commands.Cog):
     async def anforderungen2(self, ctx):
         bewerbung2 = discord.Embed(
             title='',
-            description='Um dich für eins unserer Teams zu bewerben musst du in \n <#730825948915564554> %apply Clan schreiben. \n \n Dann wird sich ein Bot bei dir per DM melden und dir ein paar Fragen stellen.',
+            description='Um dich für eins unserer Teams zu bewerben musst du in \n <#730825948915564554> %apply Clan schreiben. \n \n Dann wird sich ein Bot bei dir per DM melden und dir ein paar Fragen stellen. \n \n Außerdem werden PR Points, welche auf Mobile und/oder Switch verdient wurden nur halb so viel gezählt wie auf anderen Plattformen.',
             colour = discord.Colour.blue()
     )
 

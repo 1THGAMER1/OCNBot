@@ -77,7 +77,7 @@ class TeamOcean(commands.Cog):
     async def anforderungen2(self, ctx):
         bewerbung2 = discord.Embed(
             title='',
-            description='Um dich für eins unserer Teams zu bewerben musst du in \n <#730825948915564554> %apply Clan schreiben. \n \n Dann wird sich ein Bot bei dir per DM melden und dir ein paar Fragen stellen. \n \n Außerdem werden PR Points, welche auf Mobile und/oder Switch verdient wurden nur halb so viel gezählt wie auf anderen Plattformen.',
+            description='Um dich für eins unserer Teams zu bewerben musst du in \n <#828923653381947392> %apply Clan schreiben. \n \n Dann wird sich ein Bot bei dir per DM melden und dir ein paar Fragen stellen. \n \n Außerdem werden PR Points, welche auf Mobile und/oder Switch verdient wurden nur halb so viel gezählt wie auf anderen Plattformen.',
             colour = discord.Colour.blue()
     )
 

@@ -143,7 +143,7 @@ class TeamOcean(commands.Cog):
     async def elite(self, ctx, member: discord.Member, *, reason=None):
         guild= ctx.guild
         eliteRole = discord.utils.get(guild.roles, name='Elite ☠️')
-        clanRole = discord.utils.get(guild.roles, name='Ocean Community Clan')
+        clanRole = discord.utils.get(guild.roles, name='Grinder')
     
         eliteEmbed = discord.Embed(
             title='Neuer Elite Member',
@@ -178,7 +178,7 @@ class TeamOcean(commands.Cog):
     async def proteam(self, ctx, member: discord.Member, *, reason=None):
         guild= ctx.guild
         proteamRole = discord.utils.get(guild.roles, name='Pro Team')
-        clanRole = discord.utils.get(guild.roles, name='Ocean Community Clan')
+        clanRole = discord.utils.get(guild.roles, name='Grinder')
 
         proteamEmbed = discord.Embed(
             title='Neuer Pro Team Member',
@@ -212,7 +212,7 @@ class TeamOcean(commands.Cog):
     async def academy(self, ctx, member: discord.Member, *, reason=None):
         guild= ctx.guild
         academyRole = discord.utils.get(guild.roles, name='Academy')
-        clanRole = discord.utils.get(guild.roles, name='Ocean Community Clan')
+        clanRole = discord.utils.get(guild.roles, name='Grinder')
     
 
         academyEmbed = discord.Embed(
@@ -247,7 +247,7 @@ class TeamOcean(commands.Cog):
     async def talents(self, ctx, member: discord.Member, *, reason=None):
         guild= ctx.guild
         talentsRole = discord.utils.get(guild.roles, name='Talents')
-        clanRole = discord.utils.get(guild.roles, name='Ocean Community Clan')
+        clanRole = discord.utils.get(guild.roles, name='Grinder')
     
 
         talentsEmbed = discord.Embed(
@@ -278,9 +278,9 @@ class TeamOcean(commands.Cog):
         #COMMUNITY CLAN
     @commands.command()
     @commands.has_permissions(manage_roles=True)
-    async def communityclan(self, ctx, member: discord.Member, *, reason=None):
+    async def grinder(self, ctx, member: discord.Member, *, reason=None):
         guild= ctx.guild
-        communityRole = discord.utils.get(guild.roles, name='Ocean Community Clan')
+        communityRole = discord.utils.get(guild.roles, name='Grinder')
 
         communityEmbed = discord.Embed(
             title='Neuer Community Clan Member',

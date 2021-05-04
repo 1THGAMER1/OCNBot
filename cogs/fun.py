@@ -45,7 +45,7 @@ class fun(commands.Cog):
                'Outlook not so good',
                'Very doubtful']
 
-        await ctx.purge(limit=1)
+        await ctx.channel.purge(limit=1)
         await ctx.send(f'Frage: {question} \n Antwort {random.choice(responses)}')
 
 

@@ -95,7 +95,7 @@ class fun(commands.Cog):
         channel = message.channel
 
         await channel.purge(limit=1)
-        await channel.send(f'Pong! Meine Latenz beträgt: ``{round(self.client.latency * 1000)}ms``')
+        await channel.send(f'Pong! Meine Latenz beträgt: ```{round(self.client.latency * 1000)}ms```')
 
 
 

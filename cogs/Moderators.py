@@ -15,13 +15,13 @@ class moderators(commands.Cog):
 
     @commands.command() 
     @commands.has_permissions(kick_members=True)
-    async def kick(self, ctx, member : discord.Member, * , reason=None): 
+    async def kick(self, ctx, member : discord.Member, * , reason=Nicht angegeben): 
 
         await member.kick(reason=reason)
 
         kick = discord.Embed(
             title='Gekickt!',
-            description=f'{member.mention} wurde gekickt wegen {reason}!',
+            description=f'{member.mention} wurde gekickt. Grund : {reason}!',
             colour=discord.Colour.blue()
     
     )
@@ -33,7 +33,7 @@ class moderators(commands.Cog):
 
         kick2 = discord.Embed(
             title='Du wurdest gekickt!',
-            description=f'Du wurdest aus dem Team Ocean Server gekickt wegen {reason}.',
+            description=f'Du wurdest aus dem Team Ocean Server gekickt. Grund : {reason}.',
             colour=discord.Colour.blue()
     )
 

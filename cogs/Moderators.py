@@ -15,7 +15,7 @@ class moderators(commands.Cog):
 
     @commands.command() 
     @commands.has_permissions(kick_members=True)
-    async def kick(self, ctx, member : discord.Member, * , reason=Nicht angegeben): 
+    async def kick(self, ctx, member : discord.Member, * , reason=None): 
 
         await member.kick(reason=reason)
 

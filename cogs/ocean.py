@@ -143,7 +143,7 @@ class TeamOcean(commands.Cog):
     async def elite(self, ctx, member: discord.Member, *, reason=None):
         guild= ctx.guild
         eliteRole = discord.utils.get(guild.roles, name='Elite ☠️')
-        clanRole = discord.utils.get(guild.roles, name='Grinder')
+        clanRole = discord.utils.get(guild.roles, name='GRINDER')
     
         eliteEmbed = discord.Embed(
             title='Neuer Elite Member',
@@ -178,7 +178,7 @@ class TeamOcean(commands.Cog):
     async def proteam(self, ctx, member: discord.Member, *, reason=None):
         guild= ctx.guild
         proteamRole = discord.utils.get(guild.roles, name='Pro Team')
-        clanRole = discord.utils.get(guild.roles, name='Grinder')
+        clanRole = discord.utils.get(guild.roles, name='GRINDER')
 
         proteamEmbed = discord.Embed(
             title='Neuer Pro Team Member',
@@ -209,15 +209,15 @@ class TeamOcean(commands.Cog):
     #ACADEMY
     @commands.command()
     @commands.has_permissions(manage_roles=True)
-    async def academy(self, ctx, member: discord.Member, *, reason=None):
+    async def academy(self, ctx, *, member: discord.Member, reason=None):
         guild= ctx.guild
         academyRole = discord.utils.get(guild.roles, name='Academy')
-        clanRole = discord.utils.get(guild.roles, name='Grinder')
+        clanRole = discord.utils.get(guild.roles, name='GRINDER')
     
 
         academyEmbed = discord.Embed(
             title='Neuer Academy Member',
-            description=(f'{member.mention} ist jetzt im {academyRole.mention}'),
+            description=(f'{member.mention} ist jetzt im {academyRole.mention} Team'),
             colour= discord.Colour.blue()
     )
 
@@ -247,12 +247,12 @@ class TeamOcean(commands.Cog):
     async def talents(self, ctx, member: discord.Member, *, reason=None):
         guild= ctx.guild
         talentsRole = discord.utils.get(guild.roles, name='Talents')
-        clanRole = discord.utils.get(guild.roles, name='Grinder')
+        clanRole = discord.utils.get(guild.roles, name='GRINDER')
     
 
         talentsEmbed = discord.Embed(
             title='Neuer Talents Member',
-            description=(f'{member.mention} ist jetzt im {talentsRole.mention}'),
+            description=(f'{member.mention} ist jetzt im {talentsRole.mention} Team'),
             colour= discord.Colour.blue()
     )
 
@@ -280,11 +280,11 @@ class TeamOcean(commands.Cog):
     @commands.has_permissions(manage_roles=True)
     async def grinder(self, ctx, member: discord.Member, *, reason=None):
         guild= ctx.guild
-        communityRole = discord.utils.get(guild.roles, name='Grinder')
+        communityRole = discord.utils.get(guild.roles, name='GRINDER')
 
         communityEmbed = discord.Embed(
             title='Neuer Community Clan Member',
-            description=(f'{member.mention} ist jetzt im {communityRole.mention}'),
+            description=(f'{member.mention} ist jetzt im {communityRole.mention} Team'),
             colour= discord.Colour.blue()
     )
 
@@ -294,7 +294,7 @@ class TeamOcean(commands.Cog):
 
         community1a = discord.Embed(
             title='',
-            description=(f'Du bist jetzt im Community Clan bei {guild.name} ✅'),
+            description=(f'Du bist jetzt im Grinder Team bei {guild.name} ✅'),
             colour= discord.Colour.blue()
     )
         community1a.set_author(name='Team Ocean',

@@ -23,7 +23,7 @@ class fun(commands.Cog):
     async def _8ball(self, ctx, * , question):
 
 
-        channel = message.channel
+        
         responses = ['It is certain.',
                'It is decidely so.',
                'Without a doub.',
@@ -45,8 +45,8 @@ class fun(commands.Cog):
                'Outlook not so good',
                'Very doubtful']
 
-        await channel.purge(limit=1)
-        await channel.send(f'Frage: {question} \n Antwort {random.choice(responses)}')
+        await ctx.purge(limit=1)
+        await ctx.send(f'Frage: {question} \n Antwort {random.choice(responses)}')
 
 
 

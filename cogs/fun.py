@@ -20,7 +20,11 @@ class fun(commands.Cog):
 
 
     @commands.command(aliases=['8ball'])
-    async def _8ball(self, ctx, *, question):
+    async def _8ball(self, message, question):
+
+
+        channel = message.channel
+        async with channel.typing():
         responses = ['It is certain.',
                 'It is decidely so.',
                 'Without a doub.',
@@ -42,8 +46,8 @@ class fun(commands.Cog):
                 'Outlook not so good',
                 'Very doubtful']
 
-        await ctx.channel.purge(limit=1)
-        await ctx.send(f'Frage: {question} \n Antwort {random.choice(responses)}')
+        await channel.purge(limit=1)
+        await channel.send(f'Frage: {question} \n Antwort {random.choice(responses)}')
 
 
 
@@ -68,7 +72,7 @@ class fun(commands.Cog):
 
             if user == None:
                 #user = message.author
-                await channel.send('Die richtige Schreibweise lautet: ``o!wanted @USER``')
+                await channel.send('Die richtige Schreibweise lautet: ```o!wanted @USER```')
             else:
     
                 wanted = Image.open('wanted.png')

@@ -9,7 +9,7 @@ class moderators(commands.Cog):
 
     @commands.Cog.listener()
     async def on_ready(self):
-        print('Moderators.py loaded')
+        print('Moderators.py loaded.')
 
 
         #KICK

@@ -43,14 +43,14 @@ async def on_ready():
 #Custom Prefix | SETZT ALLE PREFIXES ZURÜCK!!!!!
 
 
-    #for guild in client.guilds:
+    for guild in client.guilds:
 
         with open("prefixes.json", "r") as f:
             prefixes = json.load(f)
         prefixes[str(guild.id)] = "o!"
         with open("prefixes.json","w") as f:
             json.dump(prefixes, f)
-        #print(f'Added the prefix`o!` to {guild.name}!')
+        print(f'Added the prefix`o!` to {guild.name}!')
 
 
 #WELCOMER

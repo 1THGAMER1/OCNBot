@@ -37,7 +37,7 @@ async def on_ready():
     await client.change_presence(activity=discord.Activity(type=discord.ActivityType.streaming, name="Bewerbungen geschlossen! ", url='https://twitch.tv/th__gamer'))
     
     print('Ready')
-'''
+
 
 
 #Custom Prefix | SETZT ALLE PREFIXES ZURÜCK!!!!!
@@ -51,7 +51,7 @@ async def on_ready():
         with open("prefixes.json","w") as f:
             json.dump(prefixes, f)
         #print(f'Added the prefix`o!` to {guild.name}!')
-'''
+
 
 #WELCOMER
 

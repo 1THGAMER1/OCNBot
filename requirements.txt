@@ -2,4 +2,4 @@ discord
 Pillow
 requests
 coloredlogs
-DiscordComponents
+discord-components

@@ -33,7 +33,6 @@ async def check_if_it_is_me(ctx):
 @client.event
 async def on_ready():          
     
-    DiscordComponents(client)
     await client.change_presence(activity=discord.Activity(type=discord.ActivityType.streaming, name="Bewerbungen geschlossen! ", url='https://twitch.tv/th__gamer'))
     
     print('Ready')

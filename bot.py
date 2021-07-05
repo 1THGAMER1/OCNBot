@@ -23,10 +23,10 @@ async def check_if_it_is_me(ctx):
 
     if ctx.message.author.id == 400658261512159232:
 
-        await ctx.send('Du hast die Berechtigung um diesen Command zu benutzen.', delete_after=10)
+        await ctx.send('', delete_after=1)
         return ctx.message.author.id == 400658261512159232
     else:
-        await ctx.send('Du hast keine Berechtigung um diesen Command zu benutzen', delete_after=30)
+        await ctx.send('Du hast keine Berechtigung um diesen Command zu benutzen', delete_after=35)
 
 
 
@@ -52,7 +52,6 @@ async def on_ready():
         print(f'Added the prefix`o!` to {guild.name}!')
 
 '''
-#WELCOMER
 
 
 

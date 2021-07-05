@@ -1,4 +1,3 @@
-from asyncio.windows_events import WindowsSelectorEventLoopPolicy
 from discord import colour
 from discord.ext.commands.bot import AutoShardedBot
 import discord

@@ -80,6 +80,8 @@ async def changeprefix(ctx, prefix):
         json.dump(prefixes, f)
 
     await ctx.send(f"Der neue Prefix lautet: {prefix}")
+    print('Neuer Prefix für', ctx.guild.id, prefix)
+
 
 #Reset Prefix
 
@@ -96,7 +98,7 @@ async def reset(ctx):
         json.dump(prefixes, f)
 
     await ctx.send('Prefix wurde zu o! zurückgesetzt!')
-
+    print('Prefix für', ctx.guild.id, 'wurde auf o!zurückgesetzt.')
 
 @client.event
 async def on_message(msg):

@@ -177,7 +177,7 @@ class moderators(commands.Cog):
     @commands.has_permissions(manage_messages=True)
     async def clear(self, ctx, amount=5):
         await ctx.channel.purge(limit=amount+1)
-        await ctx.send(amount, 'Nachrichten wurden gelöscht ✅')
+        await ctx.send(amount, 'Nachrichten wurden gelöscht ✅', delete_after=15)
 
 
 def setup(client):

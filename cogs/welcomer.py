@@ -110,6 +110,7 @@ class welcomer(commands.Cog):
                         )
 
                         await test_channel.send(embed = eingerichtet)
+                        print('Welcomer für', ctx.guild.id, 'nun in', welcomerid)
                         await ctx.send(embed = eingerichtet2, delete_after=25)
 
                     else:

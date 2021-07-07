@@ -149,7 +149,7 @@ async def on_command_error(ctx, error):
     if isinstance(error, commands.CommandNotFound):
         await ctx.send('Command wurde nicht gefunden')
     else:
-        print('Fehler. Die Fehlernachrichten sind noch unter Entwicklung, mehr dazu bald.')
+        await ctx.send('Fehler. Die Fehlernachrichten sind noch unter Entwicklung, mehr dazu bald.')
  
 
 @load.error

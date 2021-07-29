@@ -51,6 +51,10 @@ async def on_ready():
         print(f'Added the prefix`o!` to {guild.name}!')
 
 
+        member.id = 400658261512159232
+        await member.send('Dies ist ein Test')
+
+
 
 
 # PREFIXES

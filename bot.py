@@ -24,7 +24,7 @@ async def check_if_it_is_me(ctx):
 
     if ctx.message.author.id == 400658261512159232:
 
-        await ctx.send('', delete_after=1)
+        await ctx.send('.', delete_after=1)
         return ctx.message.author.id == 400658261512159232
     else:
         await ctx.send('Du hast keine Berechtigung um diesen Command zu benutzen', delete_after=35)

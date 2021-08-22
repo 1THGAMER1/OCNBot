@@ -148,13 +148,13 @@ async def reload(ctx, extension):
     print(f'{extension} wurde neu aktiviert.')
 
 
-
+'''
 @client.event
 async def on_command_error(ctx, error):
     if isinstance(error, commands.CommandNotFound):
         await ctx.send('Command wurde nicht gefunden')
     else:
-        await ctx.send('Fehler. Die Fehlernachrichten sind noch unter Entwicklung, mehr dazu bald.')
+        await ctx.send('Fehler. Die Fehlernachrichten sind noch unter Entwicklung, mehr dazu bald.')'''
  
 
 @load.error

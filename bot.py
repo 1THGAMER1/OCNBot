@@ -19,7 +19,7 @@ def get_prefix(client, message):
 
 intents = discord.Intents(messages = True, guilds = True, members = True)
 client = commands.Bot(command_prefix = get_prefix, intents = intents)
-
+'''
 async def check_if_it_is_me(ctx):
 
     if ctx.message.author.id == 400658261512159232:
@@ -27,7 +27,7 @@ async def check_if_it_is_me(ctx):
         await ctx.send('.', delete_after=1)
         return ctx.message.author.id == 400658261512159232
     else:
-        await ctx.send('Du hast keine Berechtigung um diesen Command zu benutzen', delete_after=35)
+        await ctx.send('Du hast keine Berechtigung um diesen Command zu benutzen', delete_after=35)'''
 
 
 

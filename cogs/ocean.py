@@ -14,7 +14,7 @@ class TeamOcean(commands.Cog):
     async def überuns(self, ctx):
         masked_link_embed2 = discord.Embed(
             title= '',
-            description= '**__Über uns:__**\n \n Wir sind ein Clan, der am 9.7.2020 gegründet wurde und sich nach großen Zielen sehnt. \n Wir wollen die besten Spieler haben um eines der besten und größten Clans Deutschlands zu sein. \n \n[Valorant Discord](https://discord.gg/Sw2uq8eBpB)\n \n**__Social Media:__** \n \n [Discord](https://discord.gg/AdaQBN7) \n [Instagram](https://www.instagram.com/_team_ocean_/?igshid=1gthnsd4q9vj) \n [Twitter](https://twitter.com/TeamOeanFN?s=09) \n [Twitch](https://www.twitch.tv/TeamOceande) \n \n **__Kontakt:__** \n \n  <@630018403570155521> \n <@400658261512159232> \n oceanclanesports@gmail.com \n \n  _Mit Freundlichen Grüßen_ \n **Team Ocean Management**',
+            description= '**__Über uns:__**\n \n Wir sind ein Clan, der am 9.7.2020 gegründet wurde und sich nach großen Zielen sehnt. \n Der Clan ist seit Juli 2021 geschlossen und der Server ist nun ein Community Server für coole Leute 🥸. \n \n[Valorant Discord](https://discord.gg/Sw2uq8eBpB)\n \n**__Social Media:__** \n \n [Discord](https://discord.gg/AdaQBN7) \n [Instagram](https://www.instagram.com/_team_ocean_/?igshid=1gthnsd4q9vj) \n [Twitter](https://twitter.com/TeamOeanFN?s=09) \n [Twitch](https://www.twitch.tv/TeamOceande) \n \n **__Kontakt:__** \n \n  <@630018403570155521> \n <@400658261512159232> \n oceanclanesports@gmail.com \n \n  _Mit Freundlichen Grüßen_ \n **Team Ocean Management**',
             colour = discord.Colour.blue()
         )
 

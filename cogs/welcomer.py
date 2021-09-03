@@ -100,7 +100,7 @@ class welcomer(commands.Cog):
                             
                         text = discord.Embed(
                         title='Gebe einen Text ein!',
-                        description='Gebe einen Text ein den der Bot schicken soll, wenn jemand den Server beitritt'
+                        description='Gebe einen Text ein den der Bot schicken soll, wenn jemand den Server beitritt',
                         colour= discord.Color.blue()
                         )
                         

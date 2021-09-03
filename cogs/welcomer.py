@@ -65,6 +65,7 @@ class welcomer(commands.Cog):
                                     and message.channel == ctx.channel
             )
             welcomerid = msg.content
+      
 
             test = welcomerid.isdigit()
 
@@ -96,6 +97,29 @@ class welcomer(commands.Cog):
 
                         with open("welcomer.json", "w") as f:
                             json.dump(welcomer, f)
+                            
+                        text = discord.Embed(
+                        title='Gebe einen Text ein!',
+                        description='Gebe einen Text ein den der Bot schicken soll, wenn jemand den Server beitritt'
+                        colour= discord.Color.blue()
+                        )
+                        
+                        
+                        sent2 = await ctx.send(text) #Vorzeitige Ausgabe
+                        try:
+                            msg2 = await self.client.wait_for(
+                                "message",
+                                timeout='60',
+                                check= lambda message: message.author == ctx.author
+                                                                and message.channel == ctx.channel
+                            )
+                         welcomertext = msg.content
+                        
+                        if msg2:
+                            await sent2.delete()
+                            await msg2.delete()
+                            
+                            
 
                         eingerichtet = discord.Embed(
                             title='Fertig!',
@@ -196,7 +220,7 @@ class welcomer(commands.Cog):
 
         if welcome_channel != None:
             print(welcome_channel)
-            await welcome_channel.send(file= discord.File('welcomeimage.png'))
+            await welcome_channel.send(file= discord.File('welcomeimage.png') + welcomertext)
             
 
         else:

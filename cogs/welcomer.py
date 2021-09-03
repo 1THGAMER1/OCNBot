@@ -118,24 +118,23 @@ class welcomer(commands.Cog):
                             if msg2:
                                   await sent2.delete()
                                   await msg2.delete()
-                            
-                            
+                                         
 
-                        eingerichtet = discord.Embed(
-                            title='Fertig!',
-                            description='Welcomer ist nun in diesem Kanal eingerichtet. ✅',
-                            colour=discord.Color.blue()
-                        )
+                            eingerichtet = discord.Embed(
+                                  title='Fertig!',
+                                  description='Welcomer ist nun in diesem Kanal eingerichtet. ✅',
+                                  colour=discord.Color.blue()
+                            )
 
-                        eingerichtet2 = discord.Embed(
-                            title='Fertig!',
-                            description=f'Welcomer ist nun in <#{welcomerid}> eingerichtet. ✅',
-                            colour=discord.Colour.blue()
-                        )
+                            eingerichtet2 = discord.Embed(
+                                  title='Fertig!',
+                                  description=f'Welcomer ist nun in <#{welcomerid}> eingerichtet. ✅',
+                                  colour=discord.Colour.blue()
+                            )
 
-                        await test_channel.send(embed = eingerichtet)
-                        print('Welcomer für', ctx.guild.id, 'nun in', welcomerid)
-                        await ctx.send(embed = eingerichtet2, delete_after=25)
+                            await test_channel.send(embed = eingerichtet)
+                            print('Welcomer für', ctx.guild.id, 'nun in', welcomerid)
+                            await ctx.send(embed = eingerichtet2, delete_after=25)
 
                     else:
 

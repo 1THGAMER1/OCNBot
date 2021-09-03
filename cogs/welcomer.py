@@ -113,9 +113,9 @@ class welcomer(commands.Cog):
                                 check= lambda message: message.author == ctx.author
                                                                 and message.channel == ctx.channel
                             )
-                            welcomertext = msg.content
+                        welcomertext = msg.content
                         
-                    if msg2:
+                        if msg2:
                             await sent2.delete()
                             await msg2.delete()
                             

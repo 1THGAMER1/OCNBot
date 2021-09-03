@@ -136,17 +136,17 @@ class welcomer(commands.Cog):
                             print('Welcomer für', ctx.guild.id, 'nun in', welcomerid)
                             await ctx.send(embed = eingerichtet2, delete_after=25)
 
-                    else:
+            else:
 
-                        notfound = discord.Embed(
-                            title='Fehler!',
-                            description='Der Textkanal konnte nicht gefunden werden. ❌',
-                            colour=discord.Colour.red()
-                        )
-                        notfound.set_footer(text='Bitte beachte, dass der Bot genung Berechtigungen haben muss.')
+               notfound = discord.Embed(
+                  title='Fehler!',
+                  description='Der Textkanal konnte nicht gefunden werden. ❌',
+                  colour=discord.Colour.red()
+               )
+               notfound.set_footer(text='Bitte beachte, dass der Bot genung Berechtigungen haben muss.')
 
-                        await ctx.send(embed= notfound, delete_after=30)
-                        print(test_channel)
+               await ctx.send(embed= notfound, delete_after=30)
+               print(test_channel)
 
 
 

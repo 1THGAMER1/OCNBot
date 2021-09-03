@@ -115,9 +115,9 @@ class welcomer(commands.Cog):
                             )
                             welcomertext = msg.content
                         
-                        if msg2:
-                            await sent2.delete()
-                            await msg2.delete()
+                            if msg2:
+                                  await sent2.delete()
+                                  await msg2.delete()
                             
                             
 

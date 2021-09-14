@@ -30,7 +30,7 @@ class others(commands.Cog):
     async def version(self, ctx):
         version = discord.Embed(
             title='Version 1.1.0',
-            description='Der Bot befindet sich in Version **1.1.0**\n \n**__NEU:__**\n-Neuer überarbeiteter Welcomer, nun kann jeder ganz einfach den Welcomer in seinen Server benutzen.\n-Submit Command in der Beta Version eingeführt. (Schreibe mich für neue Vorschläge oder Feedback an.\n-Oberflächenupdates der Antworten.\n-Weitere leine Fehlerbehebungen',
+            description='Der Bot befindet sich in Version **1.1.0**\n \n**__NEU:__**\n-Neuer überarbeiteter Welcomer, nun kann jeder ganz einfach den Welcomer in seinen Server benutzen.\n-Submit Command in der Beta Version eingeführt. (Schreibe mich für neue Vorschläge oder Feedback an.\n-Oberflächenupdates der Antworten.\n-Weitere kleine Fehlerbehebungen\n Amogus',
             colour = discord.Colour.blue()
             
     ) 
@@ -41,6 +41,20 @@ class others(commands.Cog):
             
         await ctx.channel.purge(limit=1)
         await ctx.send(embed = version)
+        
+        
+    @commands.command()
+    async def nextversion(self,ctx):
+        nxversion = discord.Embed(
+            title = 'Nächste Version 1.2.0',
+            description = '**Neue Features in der neuen Version**:\n-Benutzung von Buttons\n-Weitere erneuerungen der UI ```unter anderem ein neuer Help Command```\n-Weitere neue Commands. Du kannst sie mit dem Submit Command vorschlagen!',
+            colour = discord.Colour.blue()
+            
+    )
+        nxversion.set_footer(text='Version 1.2.0 wird wahrscheinlich im Frühjahr 2022 erscheinen. <:SeriousSloth:824668236200804383>')
+        
+        await ctx.channel.purge(limit=1)
+        await ctx.send(embed = nxversion)
 
 
 def setup(client):

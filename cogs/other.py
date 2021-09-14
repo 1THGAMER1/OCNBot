@@ -30,7 +30,7 @@ class others(commands.Cog):
     async def version(self, ctx):
         version = discord.Embed(
             title='Version 1.1.0',
-            description='Der Bot befindet sich in Version **1.1.0**\n \n**__NEU:__**\n-Neuer überarbeiteter Welcomer, nun kann jeder ganz einfach den Welcomer in seinen Server benutzen.\n-Submit Command in der Beta Version eingeführt. (Schreibe mich für neue Vorschläge oder Feedback an.\n-Oberflächenupdates der Antworten.\n-Weitere leine Fehlerbehebungen'
+            description='Der Bot befindet sich in Version **1.1.0**\n \n**__NEU:__**\n-Neuer überarbeiteter Welcomer, nun kann jeder ganz einfach den Welcomer in seinen Server benutzen.\n-Submit Command in der Beta Version eingeführt. (Schreibe mich für neue Vorschläge oder Feedback an.\n-Oberflächenupdates der Antworten.\n-Weitere leine Fehlerbehebungen',
             colour = discord.Colour.blue()
             
         version.set_footer(text='Ocean Bot Version 1.1.0',

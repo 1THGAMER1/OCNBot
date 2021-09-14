@@ -98,26 +98,10 @@ class welcomer(commands.Cog):
                         with open("welcomer.json", "w") as f:
                             json.dump(welcomer, f)
                             
-                        text = discord.Embed(
-                        title='Gebe einen Text ein!',
-                        description='Gebe einen Text ein den der Bot schicken soll, wenn jemand den Server beitritt',
-                        colour= discord.Color.blue()
-                        )
+
                         
                         
-                        sent2 = await ctx.send(text) #Vorzeitige Ausgabe
-                        try:
-                            msg2 = await self.client.wait_for(
-                                "message",
-                                timeout='60',
-                                check= lambda message: message.author == ctx.author
-                                                                and message.channel == ctx.channel
-                            )
-                            welcomertext = msg.content
-                        
-                            if msg2:
-                                  await sent2.delete()
-                                  await msg2.delete()
+                
                                          
 
                             eingerichtet = discord.Embed(
@@ -126,16 +110,11 @@ class welcomer(commands.Cog):
                                   colour=discord.Color.blue()
                             )
 
-                            eingerichtet2 = discord.Embed(
-                                  title='Fertig!',
-                                  description=f'Welcomer ist nun in <#{welcomerid}> eingerichtet. ✅',
-                                  colour=discord.Colour.blue()
-                            )
+                            
 
                             await test_channel.send(embed = eingerichtet)
                             print('Welcomer für', ctx.guild.id, 'nun in', welcomerid)
-                            await ctx.send(embed = eingerichtet2, delete_after=25)
-
+                            
                    else:
 
                       notfound = discord.Embed(

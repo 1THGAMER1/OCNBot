@@ -51,7 +51,8 @@ class others(commands.Cog):
             colour = discord.Colour.blue()
             
     )
-        nxversion.set_footer(text='Version 1.2.0 wird wahrscheinlich im Frühjahr 2022 erscheinen. <:SeriousSloth:824668236200804383>')
+        nxversion.set_footer(text='Version 1.2.0 wird wahrscheinlich im Frühjahr 2022 erscheinen.',
+        icon_url='https://cdn.discordapp.com/emojis/824668236200804383.png?v=1')
         
         await ctx.channel.purge(limit=1)
         await ctx.send(embed = nxversion)

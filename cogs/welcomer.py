@@ -110,10 +110,15 @@ class welcomer(commands.Cog):
                                   colour=discord.Color.blue()
                             )
 
-                            
+                            eingerichtet2 = discord.Embed(
+                                  title='Fertig!',
+                                  description=f'Welcomer ist nun in <#{welcomerid}> eingerichtet. ✅',
+                                  colour=discord.Colour.blue()
+                            )
 
                             await test_channel.send(embed = eingerichtet)
                             print('Welcomer für', ctx.guild.id, 'nun in', welcomerid)
+                            await ctx.send(embed = eingerichtet2)
                             
                     else:
 

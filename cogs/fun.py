@@ -16,6 +16,12 @@ class fun(commands.Cog):
     @commands.Cog.listener()
     async def on_ready(self):
         print('Fun.py loaded')
+        
+    @commands.command(help='Dies ist ein Test')
+    @commands.cooldown(1, 30, commands.BucketType.user)
+    async def party(self,ctx):
+         await ctx.channel.purge(limit=1)
+         await ctx.send('<a:Pepe_Saber:797044385523040266><a:Pepe_Saber:797044385523040266><a:Pepe_Saber:797044385523040266>')
 
 
 

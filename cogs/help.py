@@ -39,7 +39,7 @@ class help(commands.Cog):
 
         submit2.set_footer(text='Bitte beachte, dass Bilder oder sonstige Anhänge nicht verschickt werden.')
 
-        submit1 = await ctx.send(embed = submit2)
+        await ctx.send(embed = submit2)
         try:
             msg = await self.client.wait_for(
                 "message",

@@ -47,7 +47,7 @@ class others(commands.Cog):
     async def nextversion(self,ctx):
         nxversion = discord.Embed(
             title = 'Nächste Version 1.2.0',
-            description = '**Neue Features in der neuen Version**:\n-Benutzung von Buttons\n-Weitere erneuerungen der UI ```unter anderem ein neuer Help Command```\n-Weitere neue Commands. Du kannst sie mit dem Submit Command vorschlagen!',
+            description = '**Neue Features in der neuen Version**:\n-Benutzung von Buttons\n-Weitere erneuerungen der UI ```unter anderem ein neuer Help Command\nRollenvergabe Command```\n-Weitere neue Commands. Du kannst sie mit dem Submit Command vorschlagen!',
             colour = discord.Colour.blue()
             
     )

@@ -16,7 +16,7 @@ class others(commands.Cog):
     async def invite(self, ctx):
         invite = discord.Embed(
             title='Lade mich in dein Server ein!',
-            description='[Einladungslink](https://discord.com/oauth2/authorize?client_id=711568834590408765&scope=bot&permissions=8)',
+            description='[Einladungslink](https://discord.com/oauth2/authorize?client_id=711568834590408765&permissions=0&redirect_uri=https%3A%2F%2Fdiscord.com%2Foauth2%2Fauthorize%3Fclient_id%3D711568834590408765%26scope%3Dbot%26permissions%3D8.&scope=bot%20applications.commands)',
             colour = discord.Colour.blue()
     )
 

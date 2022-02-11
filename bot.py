@@ -34,7 +34,7 @@ async def check_if_it_is_me(ctx):
 @client.event
 async def on_ready():          
     
-    await client.change_presence(activity=discord.Activity(type=discord.ActivityType.streaming, name="Version 1.2 Frühjahr 2022! Führe den nextversion Command für mehr Infos aus.", url='https://twitch.tv/th__gamer'))
+    await client.change_presence(activity=discord.Activity(type=discord.ActivityType.streaming, name="Version 1.2 unter Entwicklung.", url='https://twitch.tv/th__gamer'))
     
     print('Ready')
 

@@ -107,13 +107,13 @@ class welcomer(commands.Cog):
                             eingerichtet = discord.Embed(
                                   title='Fertig!',
                                   description='Welcomer ist nun in diesem Kanal eingerichtet. ✅',
-                                  colour=discord.Color.blue()
+                                  colour=discord.Color.green()
                             )
 
                             eingerichtet2 = discord.Embed(
                                   title='Fertig!',
                                   description=f'Welcomer ist nun in <#{welcomerid}> eingerichtet. ✅',
-                                  colour=discord.Colour.blue()
+                                  colour=discord.Colour.green()
                             )
 
                             await test_channel.send(embed = eingerichtet)

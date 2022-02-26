@@ -84,7 +84,7 @@ class fun(commands.Cog):
                 await channel.send('Die richtige Schreibweise lautet: ```o!wanted @USER```')
             else:
     
-                wanted = Image.open('wanted.png')
+                wanted = Image.open('media/wanted.png')
 
                 asset = user.avatar_url_as(size = 128)
                 data = BytesIO(await asset.read())

@@ -203,7 +203,7 @@ class welcomer(commands.Cog):
 
         if welcome_channel != None:
             print(welcome_channel)
-            await welcome_channel.send(file= discord.File('welcomeimage.png') + welcomertext)
+            await welcome_channel.send(file= discord.File('welcomeimage.png'))
             
 
         else:

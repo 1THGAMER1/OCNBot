@@ -194,12 +194,12 @@ class welcomer(commands.Cog):
             channelid2 = json.load(f)
 
             id2 = channelid2[str(member.guild.id)]
-            
+            wirklichechteid1 = id2
 
-            
+            print(id2)
 
 
-            welcome_channel = self.client.get_channel (int(id2))
+            welcome_channel = self.client.get_channel (int(wirklichechteid1))
 
         if welcome_channel != None:
             print(welcome_channel)

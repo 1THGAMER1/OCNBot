@@ -38,7 +38,7 @@ class moderators(commands.Cog):
             colour=discord.Colour.blue()
     )
 
-        kick2.set_footer(text="Team Ocean",
+        kick2.set_footer(text="TH Beta Bot",
         icon_url='https://cdn.discordapp.com/attachments/778307192465260588/809793314614149140/android-icon-96x96.png')
         kick2.timestamp = datetime.datetime.utcnow()
         kick2.set_thumbnail(url='https://cdn.discordapp.com/attachments/778307192465260588/808721848283693146/IMG_20210208_185352_432.jpg')
@@ -61,7 +61,7 @@ class moderators(commands.Cog):
             colour=discord.Colour.blue()
     
     )
-        ban.set_footer(text="Team Ocean",
+        ban.set_footer(text="TH Beta Bot",
         icon_url='https://cdn.discordapp.com/attachments/778307192465260588/809793314614149140/android-icon-96x96.png')
         ban.timestamp = datetime.datetime.utcnow()
         ban.set_thumbnail(url='https://cdn.discordapp.com/attachments/778307192465260588/794243542489759774/tenor.gif')
@@ -73,7 +73,7 @@ class moderators(commands.Cog):
             colour=discord.Colour.blue()
     )
 
-        ban2.set_footer(text="Team Ocean",
+        ban2.set_footer(text="TH Beta Bot",
         icon_url='https://cdn.discordapp.com/attachments/778307192465260588/809793314614149140/android-icon-96x96.png')
         ban2.timestamp = datetime.datetime.utcnow()
         ban2.set_thumbnail(url='https://cdn.discordapp.com/attachments/778307192465260588/794243542489759774/tenor.gif')
@@ -120,7 +120,7 @@ class moderators(commands.Cog):
             description=(f'{member.mention} wurde gemuted, {reason} ✅'),
             colour= discord.Colour.blue()
     )
-        mutedEmbed.set_author(name='Team Ocean',
+        mutedEmbed.set_author(name='TH Beta Bot',
         icon_url='https://cdn.discordapp.com/attachments/778307192465260588/809793314614149140/android-icon-96x96.png')
 
         mutedEmbed2 = discord.Embed(
@@ -128,7 +128,7 @@ class moderators(commands.Cog):
             description=(f'Du wurdest im Server {guild.name} gemuted, wegen {reason} gemuted'),
             colour= discord.Colour.blue()
     )
-        mutedEmbed2.set_author(name='Team Ocean',
+        mutedEmbed2.set_author(name='TH Beta Bot',
         icon_url='https://cdn.discordapp.com/attachments/778307192465260588/809793314614149140/android-icon-96x96.png')
     
     
@@ -151,7 +151,7 @@ class moderators(commands.Cog):
             description=(f'{member.mention} wurde unmuted ✅'),
             colour= discord.Colour.blue()
     )
-        unmutedEmbed.set_author(name='Team Ocean',
+        unmutedEmbed.set_author(name='TH Beta Bot',
         icon_url='https://cdn.discordapp.com/attachments/778307192465260588/809793314614149140/android-icon-96x96.png')
     
         unmutedEmbed2 = discord.Embed(
@@ -159,7 +159,7 @@ class moderators(commands.Cog):
             description=(f'Du wurdest im {ctx.guild.name} Server unmuted ✅'),
             colour= discord.Colour.blue()
     )
-        unmutedEmbed.set_author(name='Team Ocean',
+        unmutedEmbed.set_author(name='TH Beta Bot',
         icon_url='https://cdn.discordapp.com/attachments/778307192465260588/809793314614149140/android-icon-96x96.png')
 
 

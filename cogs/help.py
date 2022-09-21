@@ -23,7 +23,7 @@ class help(commands.Cog):
         channelid = discord.Embed(
             title='Channelid Hilfe',
             description='Dieses Video zeigt dir wie du eine ChannelID herausfindest und kopierst. [YouTube Link](https://youtu.be/6dqYctHmazc)',
-            colour=discord.Colour.blue
+            colour=discord.Colour.blue()
         )
 
         await ctx.send(embed = channelid)

@@ -29,13 +29,13 @@ class others(commands.Cog):
     @commands.command()
     async def version(self, ctx):
         version = discord.Embed(
-            title='Version 1.1.0',
+            title='Version 1.1.1',
             description='Der Bot befindet sich in Version **1.1.0**\n \n**__NEU:__**\n-Neuer überarbeiteter Welcomer, nun kann jeder ganz einfach den Welcomer in seinen Server benutzen.\n-Submit Command in der Beta Version eingeführt. (Schreibe mich für neue Vorschläge oder Feedback an.\n-Oberflächenupdates der Antworten.\n-Weitere kleine Fehlerbehebungen\n Amogus',
             colour = discord.Colour.blue()
             
     ) 
             
-        version.set_footer(text='Ocean Bot Version 1.1.0',
+        version.set_footer(text='TH Bot Version 1.1.1',
         icon_url='https://cdn.discordapp.com/attachments/778307192465260588/809793314614149140/android-icon-96x96.png')
 
             
@@ -51,7 +51,7 @@ class others(commands.Cog):
             colour = discord.Colour.blue()
             
     )
-        nxversion.set_footer(text='Version 1.2.0 wird wahrscheinlich im Frühjahr 2022 erscheinen.',
+        nxversion.set_footer(text='Version 1.2.0 wird wahrscheinlich im Frühjahr 2023 erscheinen.',
         icon_url='https://cdn.discordapp.com/emojis/824668236200804383.png?v=1')
         
         await ctx.channel.purge(limit=1)

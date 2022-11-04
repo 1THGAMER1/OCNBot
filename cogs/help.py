@@ -77,7 +77,7 @@ class help(commands.Cog):
 
             zeitabgelaufen.set_footer(text='Bitte führe den Command neu aus.')
 
-            await submit1.delete()
+            await submit2.delete()
             await ctx.send(embed = zeitabgelaufen)
             
 def setup(client):

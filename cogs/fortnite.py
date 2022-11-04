@@ -17,17 +17,23 @@ class fortnite(commands.Cog):
     async def on_ready(self):
         print('Fortnite.py loaded')
 
-
 #STATS COMMAND
 
-    @commands.command()
+    @commands.command(help="03.11.2022 aktualisiert")
     async def stats(self, message, *, question):
         channel = message.channel
 
         async with channel.typing():
 
-            response = requests.get(f'https://fortnite-api.com/v1/stats/br/v2/?name={question}')
+            headers1 = {
+                'Authorization' : 'e94151cc-45ba-4568-b716-84c51d36b865',
+            }
+
+            response = requests.get(f'https://fortnite-api.com/v1/stats/br/v2/?name={question}', headers = headers1)
+            
+
             hey = response.json()
+            print(hey)
             hey2 = (hey['data'])
             hey3 = (hey2['account'])
             hey4 = (hey3['name'])
@@ -164,13 +170,13 @@ class fortnite(commands.Cog):
 
     # Saves the Profile Picture as a file for PIL to edit it.
 
-            im1 = Image.open("Stats.png")
+            im1 = Image.open("media/Stats.png")
 
     # Font Stuff
             draw = ImageDraw.Draw(im1)
-            font = ImageFont.truetype("BebasNeue-Regular.ttf", 82)
-            font2 = ImageFont.truetype("BebasNeue-Regular.ttf", 64)
-            font3 = ImageFont.truetype("BebasNeue-Regular.ttf", 52)
+            font = ImageFont.truetype("fonts/BebasNeue-Regular.ttf", 82)
+            font2 = ImageFont.truetype("fonts/BebasNeue-Regular.ttf", 64)
+            font3 = ImageFont.truetype("fonts/BebasNeue-Regular.ttf", 52)
     # Add the Text to the result image
                #X  #Y
             draw.text((50, 150),f'{hey4}',(255,255,255),font=font)
@@ -222,6 +228,13 @@ class fortnite(commands.Cog):
             await channel.purge(limit=1)
             await message.send(file= discord.File('stats2.png'), embed=stats)
     #print(hey12)
+
+    #@commands.Cog.listener()
+    #async def on_command_error(self, ctx, error):
+        #if isinstance(error, commands.MissingRequiredArgument):
+            #await ctx.send("Bitte gebe einen gültigen Namen an.")
+        #else:
+            #print("Fehler! fortnite.py @ .25")
 
 
 

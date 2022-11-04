@@ -13,8 +13,8 @@ import json
 import requests
 
 
-path = 'background.png'
-prefixespath = 'prefixes.json'
+path = 'media/background.png'
+prefixespath = 'data/prefixes.json'
 
 class welcomer(commands.Cog):
 
@@ -22,7 +22,7 @@ class welcomer(commands.Cog):
         self.client = client
 
     def hey(message):
-            with open("welcomer.json", "r") as f:
+            with open("data/welcomer.json", "r") as f:
                 channelid2 = json.load(f)
 
             id2 = channelid2[str(message.guild.id)]
@@ -51,7 +51,7 @@ class welcomer(commands.Cog):
 
         embed = discord.Embed(
             title='Bitte gib die ID an, in welchem Channel der Welcomer eingerichtet werden soll.',
-            description=f'Falls du nicht weißt wie du die eines Channels herausfindest, schreibe {pre}channelid im Chat. \n \n Dieser Command ist noch unter Entwicklung.',
+            description=f'Falls du nicht weißt wie du die eines Channels herausfindest, schreibe {pre}channelid im Chat. \n \n',
             colour= discord.Colour.blue()
         )
         embed.set_footer(text='Diese Nachricht wird nach 1 Minute gelöscht und der Command abgebrochen.')
@@ -90,12 +90,12 @@ class welcomer(commands.Cog):
                     test_channel = self.client.get_channel(int(welcomerid))
                 
                     if test_channel != None:
-                        with open("welcomer.json", "r") as f:
+                        with open("data/welcomer.json", "r") as f:
                                 welcomer = json.load(f)
 
                                 welcomer[str(ctx.guild.id)] = welcomerid
 
-                        with open("welcomer.json", "w") as f:
+                        with open("data/welcomer.json", "w") as f:
                             json.dump(welcomer, f)
                             
 
@@ -159,11 +159,11 @@ class welcomer(commands.Cog):
         with open('profile.jpg', 'wb') as handler:
             handler.write(img_data)
         
-        im1 = Image.open("background.png")
+        im1 = Image.open("media/background.png")
         im2 = Image.open("profile.jpg")
 
         draw = ImageDraw.Draw(im1)
-        font = ImageFont.truetype("BebasNeue-Regular.ttf", 32)
+        font = ImageFont.truetype("fonts/BebasNeue-Regular.ttf", 32)
     # Add the Text to the result image
         draw.text((160, 40),f"Willkommen {member.name}",(255,255,255),font=font)
         draw.text((160, 80),f"Du bist der {len(list(member.guild.members))}. Member",(255,255,255),font=font)
@@ -190,7 +190,7 @@ class welcomer(commands.Cog):
         embed.set_image(url="attachment://welcomeimage.png")
         embed.timestamp = datetime.datetime.utcnow()
 
-        with open("welcomer.json", "r") as f:
+        with open("data/welcomer.json", "r") as f:
             channelid2 = json.load(f)
 
             id2 = channelid2[str(member.guild.id)]
@@ -225,8 +225,8 @@ class welcomer(commands.Cog):
         im2 = Image.open("profile.jpg")
 
         draw = ImageDraw.Draw(im1)
-        font = ImageFont.truetype("BebasNeue-Regular.ttf", 32)
-        font2 = ImageFont.truetype("BebasNeue-Regular.ttf", 26)
+        font = ImageFont.truetype("fonts/BebasNeue-Regular.ttf", 32)
+        font2 = ImageFont.truetype("fonts/BebasNeue-Regular.ttf", 26)
     # Add the Text to the result image
         draw.text((160, 40),f"Tschüss {member.name}",(255,255,255),font=font)
         draw.text((160, 80),f"Neue Memberzahl: {len(list(member.guild.members))}",(255,255,255),font=font)
@@ -255,7 +255,7 @@ class welcomer(commands.Cog):
 
 
 
-        with open("welcomer.json", "r") as f:
+        with open("data/welcomer.json", "r") as f:
             channelid2 = json.load(f)
 
             id3 = channelid2[str(member.guild.id)]

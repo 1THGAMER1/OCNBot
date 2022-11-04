@@ -11,7 +11,7 @@ from discord_components.client import DiscordComponents
 
 
 def get_prefix(client, message):
-    with open("prefixes.json", "r") as f:
+    with open("data/prefixes.json", "r") as f:
         prefixes = json.load(f)
 
         return prefixes[str(message.guild.id)]
@@ -34,7 +34,7 @@ async def check_if_it_is_me(ctx):
 @client.event
 async def on_ready():          
     
-    await client.change_presence(activity=discord.Activity(type=discord.ActivityType.streaming, name="Version 1.2 unter Entwicklung.", url='https://twitch.tv/th__gamer'))
+    await client.change_presence(activity=discord.Activity(type=discord.ActivityType.streaming, name="Unter Entwicklung...", url='https://twitch.tv/th__gamer'))
     
     print('Ready')
 
@@ -44,10 +44,10 @@ async def on_ready():
 
     for guild in client.guilds:
 
-        with open("prefixes.json", "r") as f:
+        with open("data/prefixes.json", "r") as f:
             prefixes = json.load(f)
         prefixes[str(guild.id)] = "o!"
-        with open("prefixes.json","w") as f:
+        with open("data/prefixes.json","w") as f:
             json.dump(prefixes, f)
         print(f'Added the prefix`o!` to {guild.name}!')
 
@@ -63,12 +63,12 @@ async def on_ready():
 @client.event
 async def on_guild_join(guild):
 
-    with open("prefixes.json", "r") as f:
+    with open("data/prefixes.json", "r") as f:
         prefixes = json.load(f)
 
     prefixes[str(guild.id)] = "o!"
 
-    with open("prefixes.json", "w") as f:
+    with open("data/prefixes.json", "w") as f:
         json.dump(prefixes, f)
 
 
@@ -76,12 +76,12 @@ async def on_guild_join(guild):
 @commands.has_permissions(administrator=True)
 async def changeprefix(ctx, prefix):
 
-    with open("prefixes.json", "r") as f:
+    with open("data/prefixes.json", "r") as f:
         prefixes = json.load(f)
 
     prefixes[str(ctx.guild.id)] = prefix
 
-    with open("prefixes.json", "w") as f:
+    with open("data/prefixes.json", "w") as f:
         json.dump(prefixes, f)
 
     await ctx.send(f"Der neue Prefix lautet: {prefix}")
@@ -94,12 +94,12 @@ async def changeprefix(ctx, prefix):
 @commands.has_permissions(administrator=True)
 async def reset(ctx):
 
-    with open("prefixes.json", "r") as f:
+    with open("data/prefixes.json", "r") as f:
         prefixes = json.load(f)
 
     prefixes[str(ctx.guild.id)] = "o!"
 
-    with open("prefixes.json", "w") as f:
+    with open("data/prefixes.json", "w") as f:
         json.dump(prefixes, f)
 
     await ctx.send('Prefix wurde zu o! zurückgesetzt!')
@@ -111,7 +111,7 @@ async def on_message(msg):
     try:
         if msg.mentions[0] == client.user:
 
-            with open("prefixes.json", "r") as f:
+            with open("data/prefixes.json", "r") as f:
                 prefixes = json.load(f)
 
             pre = prefixes[str(msg.guild.id)]
@@ -181,4 +181,4 @@ for filename in os.listdir('./cogs'):
 
 
 
-client.run(os.getenv('TOKEN'))
+client.run('NzExNTE1Nzk0NzA5Njc2MDYy.G2DjmI.nnTINPZHSvp1gmq2xq8qGoNUlvENsJR8sLV1tU')

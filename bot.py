@@ -181,4 +181,4 @@ for filename in os.listdir('./cogs'):
 
 
 
-client.run('NzExNTE1Nzk0NzA5Njc2MDYy.G2DjmI.nnTINPZHSvp1gmq2xq8qGoNUlvENsJR8sLV1tU')
+client.run(os.getenv('TOKEN'))

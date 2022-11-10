@@ -2,7 +2,9 @@ import discord
 from discord import colour
 from discord.ext import commands
 import asyncio
-
+from discord_slash import cog_ext, SlashContext
+from discord_slash.utils.manage_commands import create_choice, create_option
+import json
 
 
 intents = discord.Intents(messages = True, guilds = True, members = True)
@@ -14,12 +16,32 @@ class help(commands.Cog):
     @commands.Cog.listener()
     async def on_ready(self):
         print('help.py loaded')
+    
+    @cog_ext.cog_slash(
+        name="welcomerchannel",
+        description="Wo ist der Welcomer eingerichtet?"
+    )
+    async def _welcomerchannel(ctx, member):
+        with open("data/welcomer.json","r") as f:
+            channel = json.load(f)
+            channelid = channel[str(member.guild.id)]
 
-# Get the Id from a Channel
+        await ctx.send("Test")
 
     @commands.command()
-    async def channelid(self,ctx):
+    async def we(self, ctx):
+        with open("data/welcomer.json", "r") as f:
+            kanal = json.load(f)
+            kanal2 = kanal[str(ctx.guild.id)]
 
+        await ctx.send(f"Der Welcomer ist derzeit in <#{kanal2}> aktiv.")
+
+
+    @cog_ext.cog_slash(
+        name="idhelp",
+        description="wie finde ich meine ID heraus?"
+    )
+    async def _channelid(self,ctx):
         channelid = discord.Embed(
             title='Channelid Hilfe',
             description='Dieses Video zeigt dir wie du eine ChannelID herausfindest und kopierst. [YouTube Link](https://youtu.be/6dqYctHmazc)',
@@ -27,6 +49,13 @@ class help(commands.Cog):
         )
 
         await ctx.send(embed = channelid)
+
+    @cog_ext.cog_slash(
+        name="submit",
+        description="Schicke mir eine Nachricht"
+    )
+    async def _submit(self, ctx):
+        await ctx.send("Placeholder")
 
     @commands.command()
     async def submit(self, ctx):

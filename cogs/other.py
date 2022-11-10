@@ -20,7 +20,7 @@ class others(commands.Cog):
             colour = discord.Colour.blue()
     )
 
-        invite.set_footer(text='Ocean Bot',
+        invite.set_footer(text='Ths Bot',
         icon_url='https://cdn.discordapp.com/attachments/778307192465260588/809793314614149140/android-icon-96x96.png')
 
         await ctx.channel.purge(limit=1)
@@ -30,7 +30,7 @@ class others(commands.Cog):
     async def version(self, ctx):
         version = discord.Embed(
             title='Version 1.1.1',
-            description='Der Bot befindet sich in Version **1.1.0**\n \n**__NEU:__**\n-Neuer überarbeiteter Welcomer, nun kann jeder ganz einfach den Welcomer in seinen Server benutzen.\n-Submit Command in der Beta Version eingeführt. (Schreibe mich für neue Vorschläge oder Feedback an.\n-Oberflächenupdates der Antworten.\n-Weitere kleine Fehlerbehebungen\n Amogus',
+            description='Der Bot befindet sich in Version **1.1.1**\n \n**__NEU:__**\n https://github.com/1THGAMER1/THBot/releases/tag/v.1.1.1',
             colour = discord.Colour.blue()
             
     ) 
@@ -47,7 +47,7 @@ class others(commands.Cog):
     async def nextversion(self,ctx):
         nxversion = discord.Embed(
             title = 'Nächste Version 1.2.0',
-            description = '**Neue Features in der neuen Version**:\n-Benutzung von Buttons\n-Weitere erneuerungen der UI ```unter anderem ein neuer Help Command\nRollenvergabe Command```\n-Weitere neue Commands. Du kannst sie mit dem Submit Command vorschlagen!',
+            description = '**Neue Features in der neuen Version**:\n```-Benutzung von Buttons\n-neuer Help Command\n-Rollenvergabe Command```',
             colour = discord.Colour.blue()
             
     )

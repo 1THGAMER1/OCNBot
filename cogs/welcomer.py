@@ -1,5 +1,4 @@
 from discord import colour
-from discord.ext.commands.bot import AutoShardedBot
 import discord
 from discord import member
 from discord.ext import commands
@@ -210,8 +209,6 @@ class welcomer(commands.Cog):
             print('Textkanal konnte nicht gefunden werden.')
             print(id2)
             print(welcome_channel)
-            
-
 
 
     @commands.Cog.listener()

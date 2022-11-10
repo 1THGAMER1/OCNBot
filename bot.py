@@ -51,13 +51,6 @@ async def on_ready():
             json.dump(prefixes, f)
         print(f'Added the prefix`o!` to {guild.name}!')
 
-
-        member.id = 400658261512159232
-        await member.send('Dies ist ein Test')
-
-
-
-
 # PREFIXES
 
 @client.event
@@ -155,13 +148,13 @@ async def reload(ctx, extension):
     print(f'{extension} wurde neu aktiviert.')
 
 
-'''
+
 @client.event
 async def on_command_error(ctx, error):
     if isinstance(error, commands.CommandNotFound):
         await ctx.send('Command wurde nicht gefunden')
     else:
-        await ctx.send('Fehler. Die Fehlernachrichten sind noch unter Entwicklung, mehr dazu bald.')'''
+        await ctx.send('Fehler. Die Fehlernachrichten sind noch unter Entwicklung, mehr dazu bald.')
  
 
 @load.error
@@ -181,4 +174,4 @@ for filename in os.listdir('./cogs'):
 
 
 
-client.run('NzExNTE1Nzk0NzA5Njc2MDYy.G2DjmI.nnTINPZHSvp1gmq2xq8qGoNUlvENsJR8sLV1tU')
+client.run('TOKEN')
